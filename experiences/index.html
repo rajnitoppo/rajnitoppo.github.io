@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiences</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .parallax-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background-image: url("https://rajnitoppo.github.io/experiences/back.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .nav-links {
+            position: fixed;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            z-index: 3;
+        }
+
+        .nav-links a {
+            color: #333;
+            font-size: 24px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-decoration: none;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .nav-links a::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            left: 50px;
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 14px;
+            white-space: nowrap;
+            opacity: 0;
+            transition: opacity 0.3s;
+            pointer-events: none;
+        }
+
+        .nav-links a:hover::after {
+            opacity: 1;
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            margin-top: 120px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+            min-height: calc(100vh - 120px);
+            max-width: 80rem;
+        }
+
+        .content-block {
+            padding: 6rem 8rem;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                left: 15px;
+                gap: 15px;
+            }
+
+            .nav-links a {
+                width: 35px;
+                height: 35px;
+                font-size: 20px;
+            }
+
+            .nav-links a::after {
+                display: none;
+            }
+
+            .content-container {
+                margin: 0 2vw;
+            }
+            
+            .content-block {
+                padding: 4rem 1rem 2rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+                padding: 8px 16px;
+            }
+
+            h3 {
+                padding: 8px 16px;
+            }
+
+            p {
+                padding: 8px 16px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax-container"></div>
+    
+    <div class="nav-links">
+        <a href="https://rajnitoppo.github.io/" data-tooltip="Back to Home">
+            <i class="fas fa-home"></i>
+        </a>
+        <a href="https://rajnitoppo.github.io/experiences" data-tooltip="My Experience">
+            <i class="fas fa-briefcase"></i>
+        </a>
+        <a href="https://rajnitoppo.github.io/skills" data-tooltip="My Skills">
+            <i class="fas fa-tools"></i>
+        </a>
+    </div>
+
+    <div class="content-container">
+        <div class="content-block">
+            <h1>My Experiences</h1>
+            <h3 style="margin-bottom: 2rem;">Last Updated: 23 May, 2025</h3>
+            <p> Lead Medical Consultant, REVIV INDIA
+<br>• Developed wellness protocols and led clinical consultations, contributing to 2024 Best Wellness
+ Company Award.
+ <br>• Collaborated with leadership to optimize service delivery and product innovation.
+ <br><br>Chief of Lab / Lab Director, LUPIN DIAGNOSTICS
+ <br>• Restructured lab operations and SOPs, resulting in improved efficiency and full regulatory alignment.
+ <br>• Elevated lab performance to #1 among 36 national centers, increasing operational revenue within a
+ year.
+ <br>• Trained and mentored lab staff on compliance and independent quality reporting.
+ <br><br>Fellow, Molecular Pathology, SRL DIAGNOSTICS
+ <br>• Conducted multi-gene molecular profiling and bioinformatics analysis on renal carcinoma (NGS,
+ Sanger, FISH).
+ <br>• Authored and led thesis on multigene profiling; published work in national journals.
+ <br><br>Founder & Managing Director, PLEXUS DIAGNOSTIQUE
+ <br>• Established a modern diagnostic and wellness center with 8+ departments and full NABL
+ accreditation.
+ <br>• Led a ₹50M INR project including equipment procurement, stakeholder partnerships, and revenue
+ scale-up to ₹1M/month.
+ <br><br>Consultant Pathologist
+ <br>Managed operations and quality across multiple hospital labs (Sahyadri, Suyog, Metropolis).
+<br><br> Physician & Emergency Care Roles
+ <br>Clinical diagnosis, ICU management, and trauma care at leading Indian hospitals</p>
+        </div>
+    </div>
+</body>
+</html>
